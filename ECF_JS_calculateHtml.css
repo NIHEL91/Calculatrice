@@ -1,0 +1,71 @@
+/* 
+* Feuille de style de l'ECF : ECF_JS_CalculateHtml.css
+* Didier Bonneau
+* Afpa DWWM Créteil maj 29-07-2021
+*/
+body {
+    background-image:url("image.jpg");
+}
+.grid-calculate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas: "resultat resultat resultat resultat"
+        "bouton1 bouton2 bouton3 bouton4"
+        "bouton1 bouton2 bouton3 bouton4"
+        "bouton1 bouton2 bouton3 bouton4"
+        "bouton1 bouton2 bouton3 bouton4"
+        "bouton1 bouton2 bouton3 bouton5";
+    width:400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #b9c9d9;
+    border-radius: 10px;
+    border-block-style: 15px;
+}
+
+.resultat { grid-area: resultat;
+            background-color: #121313;
+}
+
+ .bouton1, .bouton2, .bouton3, .bouton4 {
+   grid-area: bouton;
+    background-color: #99ccff;
+}
+.bouton5 {width: 800px;
+
+}
+.resultat input {
+    width: 80%;
+    height: 70%;
+    margin-left: 40px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align:right;
+    font-size: 2em;
+    background-color:rgb(132, 129, 129) 
+
+}
+.bouton button{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    border-radius: 10px;
+}
+    .bouton button:hover{
+    background-color:#5b8f8f;
+    }
+    
+
+
+.calculate {
+    border: 2px solid #2a1212;
+    padding: 4px;
+}
+
+h1, h2 {text-align: center;
+}
+    
+    
+
